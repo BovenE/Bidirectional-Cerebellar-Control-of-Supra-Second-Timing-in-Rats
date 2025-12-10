@@ -1,0 +1,38 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: poisson  ( log )
+Formula: TOT_Trials ~ group * manipulation + (1 | rat)
+   Data: df_summary
+
+     AIC      BIC   logLik deviance df.resid 
+   348.4    356.8   -169.2    338.4       35 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.1210 -0.3033  0.1422  0.4169  0.8773 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ rat    (Intercept) 0.009331 0.0966  
+Number of obs: 40, groups:  rat, 20
+
+Fixed effects:
+                       Estimate Std. Error z value Pr(>|z|)    
+(Intercept)             5.19957    0.03853 134.941   <2e-16 ***
+groupD                  0.02158    0.05437   0.397    0.691    
+manipulationCNO        -0.01159    0.03321  -0.349    0.727    
+groupD:manipulationCNO -0.01072    0.04681  -0.229    0.819    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) groupD mnpCNO
+groupD      -0.708              
+manipltnCNO -0.428  0.304       
+grpD:mnpCNO  0.304 -0.427 -0.710
+Confidence Intervals:
+                             2.5 %     97.5 %
+.sig01                  0.06323966 0.14749814
+(Intercept)             5.12068820 5.27719465
+groupD                 -0.08864486 0.13226358
+manipulationCNO        -0.07672813 0.05353446
+groupD:manipulationCNO -0.10250426 0.08105846

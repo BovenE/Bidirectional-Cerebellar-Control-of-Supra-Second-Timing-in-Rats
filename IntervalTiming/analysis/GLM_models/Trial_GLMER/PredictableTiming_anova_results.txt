@@ -1,0 +1,5 @@
+Analysis of Variance Table
+                   npar  Sum Sq Mean Sq F value
+group                 1  3.7942  3.7942  3.7942
+manipulation          1 13.1552 13.1552 13.1552
+group:manipulation    1  4.6431  4.6431  4.6431

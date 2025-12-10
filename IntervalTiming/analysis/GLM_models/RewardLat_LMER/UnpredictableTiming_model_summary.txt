@@ -1,0 +1,31 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: reward_lat ~ group * manipulation + (1 | Session_date) + (1 |      rat)
+   Data: dframe1
+
+REML criterion at convergence: 28661.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6471 -0.4600 -0.1220  0.2917 14.1641 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ rat          (Intercept) 77.256   8.790   
+ Session_date (Intercept)  2.248   1.499   
+ Residual                 85.219   9.231   
+Number of obs: 3922, groups:  rat, 20; Session_date, 4
+
+Fixed effects:
+                        Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)              44.1037     2.8973   19.8855  15.222 2.02e-12 ***
+groupD                    0.5070     3.9539   18.1561   0.128   0.8994    
+manipulationCNO           0.7243     0.4148 3898.7937   1.746   0.0809 .  
+groupD:manipulationCNO    6.7579     0.6103 3887.5433  11.073  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) groupD mnpCNO
+groupD      -0.682              
+manipltnCNO -0.071  0.054       
+grpD:mnpCNO  0.050 -0.074 -0.700

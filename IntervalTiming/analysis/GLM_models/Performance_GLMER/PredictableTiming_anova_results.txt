@@ -1,0 +1,16 @@
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: reward
+
+Terms added sequentially (first to last)
+
+
+                   Df Deviance Resid. Df Resid. Dev Pr(>Chi)   
+NULL                                7064     9776.1            
+group               1   0.0016      7063     9776.1 0.967988   
+manipulation        1   8.2458      7062     9767.9 0.004085 **
+group:manipulation  1   0.4875      7061     9767.4 0.485035   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

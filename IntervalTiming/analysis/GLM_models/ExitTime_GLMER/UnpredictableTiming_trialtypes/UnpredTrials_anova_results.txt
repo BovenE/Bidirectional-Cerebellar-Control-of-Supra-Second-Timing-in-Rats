@@ -1,0 +1,7 @@
+Type III Analysis of Variance Table with Satterthwaite's method
+                   Sum Sq Mean Sq NumDF   DenDF F value    Pr(>F)    
+group              0.1250  0.1250     1   19.54  0.4907    0.4919    
+manipulation       0.0011  0.0011     1 2899.58  0.0042    0.9484    
+group:manipulation 4.3507  4.3507     1  696.67 17.0817 4.017e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

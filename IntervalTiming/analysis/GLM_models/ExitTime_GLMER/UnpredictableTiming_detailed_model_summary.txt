@@ -1,0 +1,41 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: t_hold ~ group * manipulation + (1 | Session_date) + (1 | rat)
+   Data: dframe1
+
+     AIC      BIC   logLik deviance df.resid 
+  9604.5   9651.2  -4795.3   9590.5     5804 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.6947 -0.3854  0.1109  0.5452  3.5445 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ rat          (Intercept) 0.018672 0.13664 
+ Session_date (Intercept) 0.000167 0.01292 
+ Residual                 0.301866 0.54942 
+Number of obs: 5811, groups:  rat, 20; Session_date, 4
+
+Fixed effects:
+                         Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)               2.38073    0.04596   21.88528  51.796  < 2e-16 ***
+groupD                    0.01524    0.06442   21.69229   0.237 0.815202    
+manipulationCNO           0.07029    0.02035 3051.29223   3.454 0.000560 ***
+groupD:manipulationCNO   -0.10795    0.02933 1227.24663  -3.680 0.000243 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) groupD mnpCNO
+groupD      -0.699              
+manipltnCNO -0.214  0.155       
+grpD:mnpCNO  0.151 -0.221 -0.705
+Confidence Intervals:
+                             2.5 %      97.5 %
+.sig01                  0.10054586  0.19623739
+.sig02                  0.00000000  0.06351485
+.sigma                  0.53956479  0.55958552
+(Intercept)             2.28628210  2.47473857
+groupD                 -0.11695152  0.14752465
+manipulationCNO         0.03001531  0.11058123
+groupD:manipulationCNO -0.16661677 -0.04932924

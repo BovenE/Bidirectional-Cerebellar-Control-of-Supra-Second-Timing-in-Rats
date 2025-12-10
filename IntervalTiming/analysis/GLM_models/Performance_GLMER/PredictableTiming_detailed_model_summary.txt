@@ -1,0 +1,26 @@
+
+Call:
+glm(formula = reward ~ group * manipulation, family = binomial, 
+    data = dframe1)
+
+Coefficients:
+                       Estimate Std. Error z value Pr(>|z|)
+(Intercept)             0.04953    0.04641   1.067    0.286
+groupD                 -0.02854    0.06605  -0.432    0.666
+manipulationCNO         0.10546    0.06581   1.603    0.109
+groupD:manipulationCNO  0.06678    0.09565   0.698    0.485
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 9776.1  on 7064  degrees of freedom
+Residual deviance: 9767.4  on 7061  degrees of freedom
+AIC: 9775.4
+
+Number of Fisher Scoring iterations: 3
+
+Confidence Intervals:
+                             2.5 %    97.5 %
+(Intercept)            -0.04142377 0.1405436
+groupD                 -0.15802641 0.1009235
+manipulationCNO        -0.02349087 0.2344893
+groupD:manipulationCNO -0.12067482 0.2542929
