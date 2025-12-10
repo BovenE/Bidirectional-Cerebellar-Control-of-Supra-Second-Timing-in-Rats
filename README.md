@@ -23,8 +23,6 @@ You will find:
 The goal of this project was to investigate how cerebellar circuits contribute to supra-second timing behaviour, using a combination of interval-timing tasks, open-field locomotion assays, and histological verification of manipulations.  
 The repository bundles all data and scripts required to reproduce the analyses shown in the associated publication.
 
-If you want to explore the data, re-run analysis, or extend the project, this repository gives full transparency and reproducibility.  
-
 ## Directory Structure
 
 Data/
@@ -131,18 +129,24 @@ Located in: `OpenField/data_csv/`
 ## Reproducing the Analyses
 
 ### Histology
-```bash
-python PlotHistology.py
-
+PlotHistology.py
 
 ## Requirements
 
-- **Python ≥ 3.9** (for behavioural and histology analysis scripts)  
+- **Python ≥ 3.9** (for behavioural and histology analysis scripts)
 - **MATLAB ≥ R2021a** (for open-field locomotion analysis)
 - - **R ≥ 4.2.0**  
-  - Required for statistical analyses 
+  - Required for statistical analyses
 
-If you wish, I can also provide a `requirements.txt` or `environment.yml` for the Python dependencies.
+## dependencies
+- library dependencies for Python
+numpy ≥ 1.22
+pandas ≥ 1.5
+matplotlib ≥ 3.6
+seaborn ≥ 0.12
+scipy ≥ 1.10
+dabest ≥ 0.3.0
+
 
 ## Usage / Running the Analysis
 
