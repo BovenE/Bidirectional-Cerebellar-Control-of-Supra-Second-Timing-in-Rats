@@ -60,6 +60,81 @@ example_video_1.mp4
 example_video_2.mp4
 trajectory_plots.png
 
+
+---
+
+## Data Description
+
+### Interval Timing CSV Files
+Located in: `IntervalTiming/data_csv/`
+
+Each row represents **one trial**.
+
+| Column | Description | Units / Codes |
+|--------|-------------|---------------|
+| rat_id | Animal ID | string |
+| session_date | Date of session | YYYY-MM-DD |
+| group | Virus group | EGFP / hM4Di |
+| manipulation | Treatment | vehicle / CNO |
+| trial_type | Cue type | cued / uncued |
+| trial_start | Trial start time | seconds |
+| sound_onset | Onset of auditory cue | seconds |
+| sound_offset | Offset of auditory cue | seconds |
+| exit_time | t_release − t_sound_onset | seconds |
+| reward_latency | Time from exit to reward-port entry | seconds |
+| rewarded | Reward delivered | 1/0 |
+| too_early | Exit during random delay | 1/0 |
+| incorrect | Exit before reward window | 1/0 |
+| too_late | Exit after reward window | 1/0 |
+
+---
+
+### Histology CSV Files
+Located in: `Histology/data_csv/`
+
+| Column | Description |
+|--------|-------------|
+| animal_id | Animal ID |
+| section_mediolateral_mm | Distance from midline | mm |
+| cortex_intensity | Fluorescence intensity (0–5) |
+| nuclei_intensity | Fluorescence intensity (0–5) |
+| white_matter_intensity | Fluorescence intensity (0–5) |
+| mean_expression | Average intensity across regions |
+| laterality_index | (Right − Left)/(Right + Left) |
+| spread | Maximum − minimum expression extent |
+| asymmetry_index | Lateral bias / total spread |
+
+---
+
+### Open Field CSV Files
+Located in: `OpenField/data_csv/`
+
+| Column | Description | Units |
+|--------|-------------|--------|
+| frame | Frame index | integer |
+| x | Estimated head x-coordinate | pixels |
+| y | Estimated head y-coordinate | pixels |
+| likelihood | DLC confidence | 0–1 |
+| velocity | Estimated velocity | cm/s |
+| distance | Cumulative distance | meters |
+
+---
+
+## Units and Conventions
+- Time values in seconds  
+- DLC coordinates in pixels  
+- Velocity/distance in cm/m  
+- Fluorescence scale = 0–5
+
+---
+
+## Reproducing the Analyses
+
+### Histology
+```bash
+python PlotHistology.py
+
+
 ## Requirements
 
 - **Python ≥ 3.9** (for behavioural and histology analysis scripts)  
