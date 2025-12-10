@@ -16,7 +16,7 @@ You will find:
 - [Usage / Running the Analysis](#usage--running-the-analysis)  
 - [Data Description](#data-description)  
 - [Citation](#citation)  
-- [License](#license)  
+- [Contact information of the author](#license)  
 
 ## Overview
 
@@ -86,6 +86,9 @@ python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivepredictivet
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivetrials_estimationplots.py
 This code regenerates the interaction box plots in figure 3 and 4
 python Data/IntervalTiming/analysis/Figure3_4/Plot_interaction_boxplot.py
+
+### Contact information of the author
+https://orcid.org/0000-0001-6919-7612
 
 
 
