@@ -22,6 +22,8 @@ You will find:
 
 The goal of this project was to investigate how cerebellar circuits contribute to supra-second timing behaviour, using a combination of interval-timing tasks, open-field locomotion assays, and histological verification of manipulations.  
 The repository bundles all data and scripts required to reproduce the analyses shown in the associated publication.
+## Experimental details
+The experiments were p
 
 ## Directory Structure
 
@@ -42,10 +44,10 @@ Data/
 │ │ └── Figure3_4/
 │ │ Plot_interaction_boxplot.py
 │ └── data_csv/
-│ Batch1_Stage_3.csv
-│ Batch1_Stage_4.csv
-│ Batch2_Stage_3.csv
-│ Batch2_Stage_4.csv
+│ Batch1_Stage_predictabletimecue.csv **
+│ Batch1_Stage_unpredictabletimecue.csv **
+│ Batch2_Stage_predictabletimecue.csv **
+│ Batch2_Stage_unpredictabletime.csv **
 │
 └── OpenField/
 ├── analysis/
@@ -58,7 +60,7 @@ example_video_1.mp4
 example_video_2.mp4
 trajectory_plots.png
 
-
+** experiments were performed in two batches and as such are provided in .csv as batch 1 and 2.
 ---
 
 ## Data Description
