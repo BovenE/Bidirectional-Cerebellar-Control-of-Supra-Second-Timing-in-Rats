@@ -20,45 +20,48 @@ You will find:
 
 ## Overview
 
-The goal of this project was to investigate how cerebellar circuits contribute to supra-second timing behaviour, using a combination of interval-timing tasks, open-field locomotion assays, and histological verification of manipulations.  
+The goal of this project was to investigate how cerebellar circuits contribute to supra-second timing behaviour, using a combination of interval-timing tasks, open-field locomotion assays, and histological verification of DREADD and Control manipulations.  
 The repository bundles all data and scripts required to reproduce the analyses shown in the associated publication.
-## Experimental details
-The experiments were p
+The data is structured following the three data types that were collected and presented in the publication:
+	1. Histology: histological verification of control and dreadd manipulation as presented in figure 2A-D
+	2. Interval timing: interval timing task measures as presented in figure 1 and figure 3-5 in the paper
+	3. Open field: to study the effect of DREADD manipulation on open field behaviour as presented in figure2 E-G
 
 ## Directory Structure
 
 Data/
-│
-├── Histology/
-│ ├── analysis/
-│ │ PlotHistology.py
-│ └── data_csv/
-│ Microscopy_Expression_Summary_CONTROLS.csv
-│ Microscopy_Expression_Summary_DREADD.csv
-│
-├── IntervalTiming/
-│ ├── analysis/
-│ │ ├── Figure1/
-│ │ │ Plot_baseline_instructivepredictivetrials_estimationplots.py
-│ │ │ Plot_baseline_instructivetrials_estimationplots.py
-│ │ └── Figure3_4/
-│ │ Plot_interaction_boxplot.py
-│ └── data_csv/
-│ Batch1_Stage_predictabletimecue.csv **
-│ Batch1_Stage_unpredictabletimecue.csv **
-│ Batch2_Stage_predictabletimecue.csv **
-│ Batch2_Stage_unpredictabletime.csv **
-│
-└── OpenField/
-├── analysis/
-│ openfield_master.m
-│ openFieldAnalysis.m
-│ Open_field_finalPlots.m
-└── data_csv/
-*.csv (DeepLabCut output)
-example_video_1.mp4
-example_video_2.mp4
-trajectory_plots.png
+
+Histology/
+	 analysis/
+		Figure2C_D/_
+		PlotHistology.py
+	 data_csv/
+		Microscopy_Expression_Summary_CONTROLS.csv
+		Microscopy_Expression_Summary_DREADD.csv
+IntervalTiming/
+	analysis/
+		Figure1/
+			 Plot_baseline_instructivepredictivetrials_estimationplots.py
+			 Plot_baseline_instructivetrials_estimationplots.py
+		Figure3_4/
+			Plot_interaction_boxplot.py
+	data_csv/
+		Batch1_Stage_predictabletimecue.csv **
+		Batch1_Stage_unpredictabletimecue.csv **
+		Batch2_Stage_predictabletimecue.csv **
+		 Batch2_Stage_unpredictabletime.csv **
+
+ OpenField/
+	analysis/
+		Figure2E_F_G/
+			openfield_master.m
+			openFieldAnalysis.m
+			Open_field_finalPlots.m
+	data_csv/
+		*.csv (DeepLabCut output)
+		example_video_1.mp4
+		example_video_2.mp4
+		trajectory_plots.png
 
 ** experiments were performed in two batches and as such are provided in .csv as batch 1 and 2.
 ---
@@ -77,11 +80,11 @@ Each row represents **one trial**.
 | group | Virus group | EGFP / hM4Di |
 | manipulation | Treatment | vehicle / CNO |
 | trial_type | Cue type | cued / uncued |
-| trial_start | Trial start time | seconds |
-| sound_onset | Onset of auditory cue | seconds |
-| sound_offset | Offset of auditory cue | seconds |
-| exit_time | t_release − t_sound_onset | seconds |
-| reward_latency | Time from exit to reward-port entry | seconds |
+| trial_start | Trial start time | centiseconds |
+| sound_onset | Onset of auditory cue | centiseconds |
+| sound_offset | Offset of auditory cue | centiseconds |
+| exit_time | t_release − t_sound_onset | centiseconds |
+| reward_latency | Time from exit to reward-port entry | centiseconds |
 | rewarded | Reward delivered | 1/0 |
 | too_early | Exit during random delay | 1/0 |
 | incorrect | Exit before reward window | 1/0 |
@@ -99,10 +102,7 @@ Located in: `Histology/data_csv/`
 | cortex_intensity | Fluorescence intensity (0–5) |
 | nuclei_intensity | Fluorescence intensity (0–5) |
 | white_matter_intensity | Fluorescence intensity (0–5) |
-| mean_expression | Average intensity across regions |
-| laterality_index | (Right − Left)/(Right + Left) |
-| spread | Maximum − minimum expression extent |
-| asymmetry_index | Lateral bias / total spread |
+
 
 ---
 
@@ -121,7 +121,7 @@ Located in: `OpenField/data_csv/`
 ---
 
 ## Units and Conventions
-- Time values in seconds  
+- Time values in centiseconds  
 - DLC coordinates in pixels  
 - Velocity/distance in cm/m  
 - Fluorescence scale = 0–5
@@ -153,7 +153,7 @@ dabest ≥ 0.3.0
 ## Usage / Running the Analysis
 
 ### Histology  
-This code regenerates the histology summary plots in figure 1
+This code regenerates the histology summary plots in figure 2
 python Data/Histology/analysis/PlotHistology.py
 
 ### Openfield
@@ -162,7 +162,7 @@ openfield_finalPlots
 openfield_master.m
 
 ### Interval Timing
-This code regenerates the estimation plots of Figure 2
+This code regenerates the estimation plots of Figure 1
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivepredictivetrials_estimationplots.py
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivetrials_estimationplots.py
 This code regenerates the interaction box plots in figure 3 and 4
