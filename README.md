@@ -54,7 +54,7 @@ Effects of DREADD manipulation on locomotor behaviour (Figure 2E–G)
 
 ## Directory Structure
 
-
+```text
 Data/
 ├── Histology/
 │   ├── analysis/
@@ -91,6 +91,8 @@ Data/
 
 Note:
 Experiments were performed in two batches (Batch 1 and Batch 2).
+
+```
 
 
 ---
