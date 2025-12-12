@@ -9,7 +9,7 @@ The repository enables full reproduction of the analyses and figures presented i
 
 ## Contents
 
-- Raw and processed behavioural, histological, and open-field locomotion data  
+- Data from behavioural, histological, and open-field locomotion experiments
 - Analysis code used to generate all figures  
 - Metadata and summary tables  
 - Example DeepLabCut outputs and videos  
