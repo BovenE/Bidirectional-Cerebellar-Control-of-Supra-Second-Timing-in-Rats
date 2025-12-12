@@ -54,7 +54,7 @@ Effects of DREADD manipulation on locomotor behaviour (Figure 2E–G)
 
 ## Directory Structure
 
-```text
+
 Data/
 ├── Histology/
 │   ├── analysis/
@@ -91,6 +91,9 @@ Data/
 
 Note:
 Experiments were performed in two batches (Batch 1 and Batch 2).
+
+
+---
 
 ## Data Description
 
@@ -159,18 +162,18 @@ Each row represents **one behavioural trial**.
 ### Histology
 Regenerates histology summary plots shown in Figure 2:
 
-```bash
+bash
 python Data/Histology/analysis/PlotHistology.py
 
 ### Interval timing
 Figure 1 (Estimation Plots)
 
-'''bash
+bash
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivepredictivetrials_estimationplots.py
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivetrials_estimationplots.py
 
 Figure 3-4 (interaction box plots)
-'''bash
+bash
 python Data/IntervalTiming/analysis/Figure3_4/Plot_interaction_boxplot.py
 
 ### Open Field
