@@ -3,7 +3,7 @@
 This repository contains the **data, analysis scripts, and supplementary material** for the study  
 **“Bidirectional Cerebellar Control of Supra-Second Timing in Rats”**.
 
-The repository enables full reproduction of the analyses presented in the associated publication.
+The repository enables full reproduction of the analyses and figures presented in the associated publication.
 
 ---
 
