@@ -162,13 +162,13 @@ Each row represents **one behavioural trial**.
 ## Reproducing the Analyses
 
 ### Histology
-Regenerates histology summary plots shown in Figure 2:
+Regenerates histology summary plots shown in Figure 1:
 
 bash
 python Data/Histology/analysis/PlotHistology.py
 
 ### Interval timing
-Figure 1 (Estimation Plots)
+Figure 2 (Estimation Plots)
 
 bash
 python Data/IntervalTiming/analysis/Figure1/Plot_baseline_instructivepredictivetrials_estimationplots.py
@@ -180,7 +180,7 @@ python Data/IntervalTiming/analysis/Figure3_4/Plot_interaction_boxplot.py
 
 ### Open Field
 
-Generates open-field locomotion plots shown in Figure 2E–G:
+Generates open-field locomotion plots shown in Figure 1E–G:
     openfield_master
     Open_field_finalPlots
 
