@@ -171,14 +171,17 @@ Experiments were performed in two batches (Batch 1 and Batch 2), therefor datafi
 **methodology:** This is the standard deeplabcut output 
 
 
+
 | Column | Description | Units |
+|------|------------|-------|
+| Scorer | Information on the specific deeplabcut model used
+| bodyparts | Information on the specific bodyparts tracked in the following coordinates:
 |------|------------|-------|
 | frame | Frame index | integer |
 | x | Estimated head x-coordinate | pixels |
 | y | Estimated head y-coordinate | pixels |
 | likelihood | DLC confidence | 0–1 |
-| velocity | Estimated velocity | cm/s |
-| distance | Cumulative distance | meters |
+
 
 ---
 
@@ -190,17 +193,18 @@ Each row represents **one behavioural trial**.
 
 | Column | Description | Units / Codes |
 |------|------------|---------------|
-| rat_id | Animal ID | string |
+| rat| Animal ID | string |
 | group_id | Individual mouse ID for virus group | C (EGFP) / D (hM4Di) |
 | group | Virus group | C (EGFP) / D (hM4Di) |
 | session_date | Session date | YYYY-MM-DD |
 | manipulation | Treatment | BASE (baseline session) 
 | manipulation_type | Drug delivery  | BASE (baseline session) 
+| t_hold | t_release − t_sound_onset | centiseconds |
 | trial | Cue type | 0 (too early) / 1 (cued) / 2 (uncued) | ** note: this column is specific for the unpredictable interval timing sessions
-| trials | Session specific trial number | integer
-| exit_time | t_release − t_sound_onset | centiseconds |
 | reward_latency (reward_lat) | Exit → reward port entry | centiseconds |
 | reward | Reward delivered | 1 (correct) / 0 (incorrect, too late) / -1 (too early trial) |
+| trials | Session specific trial number | integer
+
 
 
 ### Figure 3 & 4 - Interval Timing with DREADD manipulation 
@@ -212,17 +216,18 @@ Each row represents **one behavioural trial**.
 
 | Column | Description | Units / Codes |
 |------|------------|---------------|
-| rat_id | Animal ID | string |
+| rat | Animal ID | string |
 | group_id | Individual mouse ID for virus group | C (EGFP) / D (hM4Di) |
 | group | Virus group | C (EGFP) / D (hM4Di) |
 | session_date | Session date | YYYY-MM-DD |
 | manipulation | Treatment | vehicle / CNO / BASE (baseline session) |
 | manipulation_type | Drug delivery  | BASE (baseline session) /  i.p. injections
 | trial | Cue type | 0 (too early) / 1 (cued) / 2 (uncued) | ** note: this column is specific for the unpredictable interval timing sessions
-| trials | Session specific trial number | integer
-| t_hold_ | t_release − t_sound_onset | seconds|
+| t_hold | t_release − t_sound_onset | seconds|
 | reward_latency (reward_lat) | Exit → reward port entry | centiseconds |
 | reward | Reward delivered | 1 (correct) / 0 (incorrect, too late) / -1 (too early trial) |
+| trials | Session specific trial number | integer
+
 
 ### Figure 5 - Interval Timing with unpredictable timecue with DREADD manipulation 
 **Location:** `Figure2\Panel_B-D_IntervalTiming\data`  
@@ -233,17 +238,17 @@ Each row represents **one behavioural trial**.
 
 | Column | Description | Units / Codes |
 |------|------------|---------------|
-| rat_id | Animal ID | string |
+| rat | Animal ID | string |
 | group_id | Individual mouse ID for virus group | C (EGFP) / D (hM4Di) |
-| group | Virus group | C (EGFP) / D (hM4Di) |
 | session_date | Session date | YYYY-MM-DD |
+| group | Virus group | C (EGFP) / D (hM4Di) |
 | manipulation | Treatment | vehicle / CNO / BASE (baseline session) |
 | manipulation_type | Drug delivery  | BASE (baseline session) 
+| t_hold_ | t_release − t_sound_onset | centiseconds |
+| reward | Reward delivered | 1 (correct) / 0 (incorrect, too late) / -1 (too early trial) |
 | trial | Cue type | 0 (too early) / 1 (cued) / 2 (uncued) | ** note: this column is specific for the unpredictable interval timing sessions
 | trials | Session specific trial number | integer
-| exit_time | t_release − t_sound_onset | centiseconds |
 | reward_latency (reward_lat) | Exit → reward port entry | centiseconds |
-| reward | Reward delivered | 1 (correct) / 0 (incorrect, too late) / -1 (too early trial) |
 
 
 
