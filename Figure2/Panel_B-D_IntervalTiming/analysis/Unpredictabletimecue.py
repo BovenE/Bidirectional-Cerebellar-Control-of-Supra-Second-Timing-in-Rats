@@ -13,8 +13,10 @@ import numpy as np
 # ==========================
 # Load and preprocess data
 # ==========================
-path1 =r"C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\Data\TITET\Batch2_unpredictabletimecue.xls"
-path2 = r"C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\Data\TITET\Batch1_unpredictabletimecue.xls"
+
+path1 = r"PathtoData\Figure2\Panel_B-D_IntervalTiming\data\Batch1_unpredictabletimecue.xls"
+path2 = r"PathtoData\Figure2\Panel_B-D_IntervalTiming\data\Batch2_unpredictabletimecue.xls"
+
 df1 = pd.read_excel(path1)
 df2 = pd.read_excel(path2)
 

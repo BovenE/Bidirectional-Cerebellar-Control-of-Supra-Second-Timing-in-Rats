@@ -1,12 +1,8 @@
 close all 
 clear all 
-dir_openfield1 = '/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Behaviour/Open_field';
-dir_openfield2 = '/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Behaviour/Open_field_2';
+dir_openfield = 'PathtoData\Figure1\Panel_E-F-G_OpenFieldLocomotion';
 
-dir1=dir([dir_openfield1, '/*.xlsx']);
-files_openfield1={dir1.name};
-
-dir2=dir([dir_openfield2, '/*.xlsx']);
+dir=dir([dir_openfield, '/*.xlsx']);
 files_openfield2={dir2.name};
 
 distance_moved=zeros(9,1);

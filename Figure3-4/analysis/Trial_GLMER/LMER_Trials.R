@@ -55,9 +55,9 @@ library(ggplot2)
 install.packages("dplyr")  # Install if not already installed
 library(dplyr)  # Load dplyr before using summarise()
 
-#path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/ip3_dataset_NEWFINAL.csv'
-path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/ipREVIEW_combined_dataset_NEWFINAL.csv'
-
+path ="Pathtodata\Figure3-4\data\PredictableStage_GLMDataset.csv"
+or 
+path ="Pathtodata\Figure3-4\data\UnpredictableStage_GLMDataset.csv"
 
 dframe <- read.csv(path)  
 

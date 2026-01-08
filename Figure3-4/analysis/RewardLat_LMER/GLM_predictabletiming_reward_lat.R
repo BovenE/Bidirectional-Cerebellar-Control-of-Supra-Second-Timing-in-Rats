@@ -21,8 +21,7 @@ library(margins)
 #library(ggpubr)
 
 #load data
-path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/ip3_dataset_NEWFINAL.csv'
-#path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/infusions3_dataset.csv'
+path ="Pathtodata\Figure3-4\data\PredictableStage_GLMDataset.csv"
 
 dframe <- read.csv(path)  
 

@@ -37,23 +37,12 @@ This project investigates how **cerebellar circuits contribute to supra-second t
 - Interval-timing behavioural tasks in rats
 - Open-field locomotion assays in rats
 - Histological verification of DREADD and control manipulations in rats
+- Estimation statistics & General linear models to perform statistical analysis of behavioural measures 
 
 The dataset is organised **by figure**, such that each figure in the manuscript corresponds to a dedicated data and analysis folder.
 Each figure directory contains:
 - `data/`: Raw or minimally processed data used for that figure
 - `analysis/`: Scripts used to generate the analyses and plots
-
-Metadata files in the `metadata/` directory provide session-, animal-, and condition-level information shared across figures.
-
-
-### 1. Histology
-Histological verification of control and DREADD manipulations (Figure 2A–D)
-
-### 2. Interval Timing
-Behavioural interval-timing measures (Figures 1 and 3–5)
-
-### 3. Open Field
-Effects of DREADD manipulation on locomotor behaviour (Figure 2E–G)
 
 ---
 
@@ -302,6 +291,8 @@ The output of the corresponding GLM models is saved to a .txt file
 regenerates GLM analysis that is presented in figure 5
 
 To regenerate the GLM analysis run GLM_UnpredictableStage.R
+The output of the corresponding GLM models is saved to a .txt file
+
 
 
 

@@ -23,8 +23,7 @@ library(ggeffects)
 #library(ggpubr)
 
 #load data
-path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/ip4_dataset_NEWFINAL.csv'
-#path ='/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Analysis/EB_Analysis/R_scripts/GLM/infusions4_dataset.csv'
+path ="Pathtodata\Figure3-4\data\UnpredictableStage_GLMDataset.csv"
 
 dframe <- read.csv(path)  
 

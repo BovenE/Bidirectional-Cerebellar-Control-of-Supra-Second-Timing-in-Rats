@@ -12,8 +12,9 @@ import dabest
 # Load and preprocess data
 # ==========================
 
-path1 = r"C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\Data\TITET\Batch1_predictabletimecue.xls"
-path2= r"C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\Data\TITET\Batch2_predictabletimecue.xls"
+path1 = r"PathtoData\Figure2\Panel_B-D_IntervalTiming\data\Batch1_predictabletimecue.xls"
+path2 = r"PathtoData\Figure2\Panel_B-D_IntervalTiming\data\Batch2_predictabletimecue.xls"
+
 
 df1 = pd.read_excel(path1)
 df2 = pd.read_excel(path2)
@@ -131,10 +132,3 @@ contrast_ax.set_ylabel("Δ (hM4D(Gi) − EGFP)", fontsize=18, labelpad=10)
 raw_ax.tick_params(axis='both', labelsize=16)
 contrast_ax.tick_params(axis='both', labelsize=16)
 
-# ==========================
-# Finalize and save
-# ==========================
-plt.tight_layout()
-# plt.savefig(r'C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\CodeOutput\Figure1\Stage3_baseline_dabest_mean_sd_dot_fonts.svg')
-# # plt.savefig('/Users/va18024/Documents/Paper/Figure1/Stage3_baseline_dabest_mean_sd_dot_fonts.png')
-# plt.show()

@@ -24,8 +24,10 @@ fig, axd = plt.subplot_mosaic(layout, figsize=(14,5))
 
 
 #TO DO: Set path to file
-#file = "/Users/va18024/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/PhD/Cerebellearning/Experimental/Valentina_Pauly_Msc_project/Microscopy/Expression/Microscopy_Expression_Summary_DREADD.xlsx"
-file = r"INSERTPATHTOFOLDER\Histology\data_csv\Microscopy_Expression_Summary_DREADD.xlsx"
+
+#file = "PathtoData\Panel_C-D_DREADDManipulation\data\Microscopy_Expression_Summary_DREADD.xlsx"
+
+
 #get sheet names since names have different structure
 xl = pd.ExcelFile(file)
 
@@ -223,8 +225,7 @@ axd['A'].legend()
 
 
 ####plot Controls
-# file = r"C:\Users\eboven\OneDrive - Erasmus MC\Documents\PhD\Data\Histology\Microscopy_Expression_Summary_CONTROLS.xlsx"
-file = r"INSERTPATHTOFOLDER\Histology\data_csv\Microscopy_Expression_Summary_CONTROLS.xlsx"
+file = "PathtoData\Figure1\Panel_C-D_DREADDManipulation\data\Microscopy_Expression_Summary_EGFP.xlsx"
 
 #get sheet names since names have different structure
 xl = pd.ExcelFile(file)
